@@ -13,8 +13,8 @@ app.use(express.static(pathToBuildFolder));
 
 
 app.get('/', (req, res) => {
-  // res.sendFile(pathToIndexHtml);
-  res.send("Hi there");
+  res.sendFile(pathToIndexHtml);
+  // res.send("Hi there");
 })
 
 app.listen(PORT, () => console.log(`Express app listening at http://localhost:${PORT}`));
